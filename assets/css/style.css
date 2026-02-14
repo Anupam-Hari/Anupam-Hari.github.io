@@ -743,15 +743,21 @@ main {
   scroll-padding-inline: 25px;
 }
 
+/* ===== Tools / Software Logo Normalization ===== */
+
 .clients-item {
-  min-width: 50%;
-  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;        /* uniform container height */
 }
 
 .clients-item img {
-  width: 100%;
-  filter: grayscale(1);
-  transition: var(--transition-1);
+  max-height: 60px;     /* all logos same visual height */
+  max-width: 120px;     /* prevent extremely wide logos */
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .clients-item img:hover { filter: grayscale(0); }
