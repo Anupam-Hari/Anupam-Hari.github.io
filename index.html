@@ -932,54 +932,105 @@
       </article>
 
 
+<!--
+  - #BLOG
+-->
 
-      <!--
-        - #BLOG
-      -->
+<article class="blog" data-page="blog">
 
-      <article class="blog" data-page="blog">
+  <header>
+    <h2 class="h2 article-title">Internship Review</h2>
+  </header>
 
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
+  <section class="blog-posts">
 
-        <section class="blog-posts">
+    <ul class="blog-posts-list">
 
-          <ul class="blog-posts-list">
+      <!-- BLOG CARD -->
+      <li class="blog-post-item">
+        <div class="content-card" data-blog-item>
 
-            <li class="blog-post-item">
-              <a href="#">
+          <figure class="blog-banner-box">
+            <img src="./assets/images/blog-1.jpg"
+                 alt="CASDIC Internship"
+                 width="60"
+                 data-blog-img>
+          </figure>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Research notes" loading="lazy">
-                </figure>
+          <h4 class="h4" data-blog-title>
+            Emitter Geolocation — CASDIC, DRDO
+          </h4>
 
-                <div class="blog-content">
+          <div class="blog-text" data-blog-text>
+            <p>
+              Internship at Combat Aircraft System Development and Integration Centre (CASDIC), DRDO.
+            </p>
 
-                  <div class="blog-meta">
-                    <p class="blog-category">Research</p>
+            <h5>Project Overview</h5>
+            <p>
+              Developed a MATLAB simulation to model aircraft–radar interaction
+              and estimate emitter location using geometric and signal data.
+            </p>
 
-                    <span class="dot"></span>
+            <h5>Technical Work</h5>
+            <ul>
+              <li>LLA ↔ ECEF coordinate transformations</li>
+              <li>Roll–Pitch–Yaw (Euler angles)</li>
+              <li>Rotation matrices (Body/ECEF/Sensor frames)</li>
+              <li>Azimuth & Elevation computation</li>
+              <li>Newton–Raphson & Gauss–Newton estimation</li>
+              <li>Least-Squares triangulation</li>
+              <li>AWGN noise modeling</li>
+            </ul>
 
-                    <time datetime="2025-06-30">Jun 30, 2025</time>
-                  </div>
+            <h5>Laboratory Exposure</h5>
+            <p>
+              Observed antenna testing labs including microstrip, horn and array antennas,
+              and visited an anechoic chamber for radiation pattern measurements.
+            </p>
 
-                  <h3 class="h3 blog-item-title">Notes on radar geolocation</h3>
+            <h5>Software Used</h5>
+            <p>
+              MATLAB with Aerospace Toolbox, Mapping Toolbox,
+              Phased Array System Toolbox, and App Designer.
+            </p>
 
-                  <p class="blog-text">
-                    Short summary of MATLAB simulation and geolocation algorithm.
-                  </p>
+          </div>
 
-                </div>
+        </div>
+      </li>
 
-              </a>
-            </li>
+    </ul>
 
-          </ul>
+  </section>
 
-        </section>
+  <!-- BLOG MODAL -->
+  <div class="modal-container" data-blog-modal-container>
 
-      </article>
+    <div class="overlay" data-blog-overlay></div>
+
+    <section class="testimonials-modal">
+
+      <button class="modal-close-btn" data-blog-modal-close-btn>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="modal-img-wrapper">
+        <figure class="modal-avatar-box">
+          <img src="" alt="" width="80" data-blog-modal-img>
+        </figure>
+      </div>
+
+      <div class="modal-content">
+        <h4 class="h3 modal-title" data-blog-modal-title></h4>
+        <div data-blog-modal-text></div>
+      </div>
+
+    </section>
+
+  </div>
+
+</article>
 
 
 
